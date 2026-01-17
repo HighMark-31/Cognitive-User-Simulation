@@ -13,6 +13,8 @@
 
 [Features](#-features) • [Installation](#-installation) • [Configuration](#%EF%B8%8F-configuration) • [Usage](#-usage) • [Documentation](#-documentation)
 
+[![Star the project](https://img.shields.io/badge/⭐_Star_the_Project-black?style=for-the-badge)](https://github.com/HighMark-31/Cognitive-User-Simulation/stargazers) ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=HighMark-31.Cognitive-User-Simulation)
+
 </div>
 
 ---
