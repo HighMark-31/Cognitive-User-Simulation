@@ -1,0 +1,36 @@
+Cognitive Discord Interaction Framework
+Research and Educational License v1.0
+
+Copyright (c) 2026 HighMark-31 [HighMark - Marco N.]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to use,
+study, and modify the Software strictly for personal, educational, or academic
+research purposes.
+
+The following restrictions apply:
+
+1. The Software may NOT be used for commercial purposes, including but not
+   limited to resale, sublicensing, hosting as a service, or integration into
+   commercial products or services.
+
+2. Redistribution of the Software, in source or binary form, modified or
+   unmodified, is NOT permitted without explicit written permission from the
+   author.
+
+3. The Software may NOT be used to automate or control Discord user accounts
+   in violation of Discord Terms of Service or Community Guidelines.
+
+4. Platform-specific adapters, extended integrations, or commercial licenses
+   are NOT included in this release and are distributed separately under
+   different licensing terms.
+
+DISCLAIMER:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
+OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
