@@ -1,4 +1,4 @@
-# Cognitive-DiscordUser-Simulation
+# Cognitive-User-Simulation
 
 An advanced LLM-powered social simulation framework for Discord user accounts. Features autonomous context-aware interactions, human-like behavioral modeling, and multi-provider LLM integration for research and educational purposes.
 
