@@ -122,7 +122,7 @@ Create a `.env` file in the project root:
 # ==========================================
 # DISCORD CONFIGURATION
 # ==========================================
-DISCORD_USER_TOKEN=your_discord_user_token_here
+DISCORD_BOT_TOKEN=your_bot_token_here
 
 # ==========================================
 # DATABASE CONFIGURATION
@@ -216,7 +216,7 @@ When a user questions if the bot is an AI:
 
 1. Automatically detects suspicion patterns
 2. Logs the interaction to database
-3. Generates a natural denial response
+3. Generates a natural denial response for EXPERIMENTAL ONLY REASON
 4. Saves data for analysis
 
 ### Multi-Provider LLM Support
@@ -243,9 +243,6 @@ Hard-coded regex patterns block:
 -  **Reading Delays**: Adds natural reading time before responding
 -  **Presence Management**: Rotates status (Online, Idle, DND) and activities
 -  **Sleep Mode**: Implements circadian rhythm with nighttime inactivity
-
-#### ✅ Message Acknowledgment
-Marks messages as read to clear notification indicators, simulating real UI interaction.
 
 ---
 
