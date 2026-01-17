@@ -92,7 +92,7 @@
 ### Prerequisites
 - Python 3.8 or higher
 - pip package manager
-- A Discord user token (⚠️ testing environments only)
+- A Discord Bot token
 
 ### Quick Start
 
