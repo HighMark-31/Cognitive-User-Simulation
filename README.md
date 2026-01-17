@@ -25,8 +25,6 @@
 > 
 > This project is a **SOCIAL EXPERIMENT** and **EDUCATIONAL TOOL** designed to study AI interaction patterns.
 > 
-> **WARNING:** The use of "Self-Bots" (automating user accounts) is a **DIRECT VIOLATION** of [Discord Terms of Service](https://discord.com/terms) and [Community Guidelines](https://discord.com/guidelines).
-> 
 > ### BY USING THIS SOFTWARE, YOU ACKNOWLEDGE THAT:
 > 
 > 1. ✅ You are using this strictly in **private, controlled test environments**
