@@ -19,8 +19,6 @@
 
 ## ⚠️ LEGAL WARNING: EXPERIMENTAL SOFTWARE
 
-> [!CRITICAL]
-> 
 > ### DISCORD TERMS OF SERVICE VIOLATION RISK
 > 
 > This project is a **SOCIAL EXPERIMENT** and **EDUCATIONAL TOOL** designed to study AI interaction patterns.
@@ -45,21 +43,21 @@
 <td width="50%">
 
 ### 🤖 AI & Intelligence
-- 🧠 **Advanced LLM Integration** (GLM 4.7, OpenAI, Gemini)
-- 🎯 **Autonomous Action Planning System**
-- 🌐 **Multilingual Support** with automatic detection
-- 🔍 **Suspicion Detection & Logging**
-- 💬 **Natural Conversational Responses**
+-  **Advanced LLM Integration** (GLM 4.7, OpenAI, Gemini)
+-  **Autonomous Action Planning System**
+-  **Multilingual Support** with automatic detection
+-  **Suspicion Detection & Logging**
+-  **Natural Conversational Responses**
 
 </td>
 <td width="50%">
 
 ### 🛡️ Safety & Security
-- 🔒 **Advanced Safety Filter** (regex-based)
-- 🚫 **Anti-ToS Violation Protection**
-- 👤 **Human Behavior Simulation**
-- 💤 **Circadian Rhythm Sleep Mode**
-- ✅ **Message Acknowledgment System**
+-  **Advanced Safety Filter** (regex-based)
+-  **Anti-ToS Violation Protection**
+-  **Human Behavior Simulation**
+-  **Circadian Rhythm Sleep Mode**
+-  **Message Acknowledgment System**
 
 </td>
 </tr>
@@ -67,19 +65,19 @@
 <td width="50%">
 
 ### 📊 Data & Analytics
-- 💾 **SQLite Database** for all interactions
-- 📈 **Usage Statistics Tracking**
-- 🔎 **Interaction Logging**
-- 📝 **Suspicion Event Recording**
+-  **SQLite Database** for all interactions
+-  **Usage Statistics Tracking**
+-  **Interaction Logging**
+-  **Suspicion Event Recording**
 
 </td>
 <td width="50%">
 
 ### 🎭 Behavior Simulation
-- ⌨️ **Typing Indicators** (length-based timing)
-- 👀 **Reading Delays** (context-aware)
-- 🎨 **Presence Management** (Online/Idle/DND)
-- 🎮 **Activity Rotation** (VS Code, Spotify, etc.)
+-  **Typing Indicators** (length-based timing)
+-  **Reading Delays** (context-aware)
+-  **Presence Management** (Online/Idle/DND)
+-  **Activity Rotation** (VS Code, Spotify, etc.)
 
 </td>
 </tr>
@@ -165,39 +163,12 @@ PRIORITY_GUILD_ID=1320998163615846420
 
 ---
 
-## 🔑 Getting Credentials
-
-### 🚫 Discord User Token
-
-> [!CAUTION]
-> **IMPORTANT: TERMS OF SERVICE (ToS) VIOLATION**
-> 
-> Using a user token (self-botting) is a **direct violation of Discord's Terms of Service**. This practice can lead to **permanent account suspension**.
-> 
-> **RECOMMENDATIONS:**
-> - ❌ **DO NOT** use this script with your main account
-> - ✅ Use the user token **exclusively in secure and controlled test environments**
-> - 📚 This project is intended only for educational purposes and social research
-> - ⚖️ The author assumes no responsibility for misuse or sanctions
-
-<details>
-<summary><b>Click to view how to obtain a Discord User Token</b></summary>
-
-1. Open Discord in your browser (not the desktop app)
-2. Press `F12` to open Developer Tools
-3. Go to the **Network** tab
-4. Send a message in any channel
-5. Find a request (like `messages`) in the Network tab
-6. Look for the `Authorization` header in the request headers
-7. Copy the value and add it to your `.env` file as `DISCORD_USER_TOKEN`
-
-</details>
 
 ### 🤖 LLM Provider API Keys
 
 | Provider | Get API Key | Documentation |
 |----------|-------------|---------------|
-| **GLM (Zhipu)** | [open.bigmodel.cn](https://open.bigmodel.cn/) | [Docs](https://open.bigmodel.cn/dev/howuse/introduction) |
+| **GLM (Zhipu)** | [open.bigmodel.cn](https://z.ai/) | [Docs](https://z.ai/model-api) |
 | **OpenAI** | [platform.openai.com](https://platform.openai.com/) | [Docs](https://platform.openai.com/docs) |
 | **Google Gemini** | [makersuite.google.com](https://makersuite.google.com/) | [Docs](https://ai.google.dev/docs) |
 
@@ -243,17 +214,17 @@ The bot autonomously decides what to do next using LLM-based planning:
 
 When a user questions if the bot is an AI:
 
-1. 🔍 Automatically detects suspicion patterns
-2. 💾 Logs the interaction to database
-3. 🎭 Generates a natural denial response
-4. 📊 Saves data for analysis
+1. Automatically detects suspicion patterns
+2. Logs the interaction to database
+3. Generates a natural denial response
+4. Saves data for analysis
 
 ### Multi-Provider LLM Support
 
 Switch between providers by changing `LLM_PROVIDER` in `.env`:
 
 ```env
-LLM_PROVIDER=glm     # Zhipu GLM-4.7
+LLM_PROVIDER=glm     # Z.ai GLM-4.7
 LLM_PROVIDER=openai  # GPT-4o-mini
 LLM_PROVIDER=gemini  # Gemini 1.5 Flash
 ```
@@ -262,16 +233,16 @@ LLM_PROVIDER=gemini  # Gemini 1.5 Flash
 
 #### 🔒 Safety Filter
 Hard-coded regex patterns block:
-- 🔗 Discord invites
-- 👤 PII (Personal Identifiable Information)
-- 💰 Scam keywords
-- 🚫 Slurs and toxic content
+-  Discord invites
+-  PII (Personal Identifiable Information)
+-  Scam keywords
+-  Slurs and toxic content
 
 #### 👤 Human Simulation
-- ⌨️ **Typing Indicators**: Simulates realistic typing time based on message length
-- 👀 **Reading Delays**: Adds natural reading time before responding
-- 🎨 **Presence Management**: Rotates status (Online, Idle, DND) and activities
-- 💤 **Sleep Mode**: Implements circadian rhythm with nighttime inactivity
+-  **Typing Indicators**: Simulates realistic typing time based on message length
+-  **Reading Delays**: Adds natural reading time before responding
+-  **Presence Management**: Rotates status (Online, Idle, DND) and activities
+-  **Sleep Mode**: Implements circadian rhythm with nighttime inactivity
 
 #### ✅ Message Acknowledgment
 Marks messages as read to clear notification indicators, simulating real UI interaction.
@@ -331,11 +302,11 @@ personality = 'sarcastic, direct, ironic, sometimes chaotic'
 
 ### Response Generation Rules
 
-- 📝 2-3 natural, colloquial sentences
-- 🎯 Reference concrete details from context
-- 🗣️ Moderate use of slang/abbreviations
-- 😊 Minimal emojis
-- 🌐 Adapt to channel language (EN/IT)
+-  2-3 natural, colloquial sentences
+-  Reference concrete details from context
+-  Moderate use of slang/abbreviations
+-  Minimal emojis
+-  Adapt to channel language (EN/IT)
 
 **Examples:**
 
@@ -351,30 +322,30 @@ personality = 'sarcastic, direct, ironic, sometimes chaotic'
 <details>
 <summary><b>Bot doesn't respond</b></summary>
 
-- ✅ Verify the token in `.env`
-- ✅ Check Discord Developer Portal privileges
-- ✅ Review logs for errors
-- ✅ Ensure bot has permission to read/send messages
+-  Verify the token in `.env`
+-  Check Discord Developer Portal privileges
+-  Review logs for errors
+-  Ensure bot has permission to read/send messages
 
 </details>
 
 <details>
 <summary><b>LLM API Error</b></summary>
 
-- ✅ Verify the API key is valid
-- ✅ Check available credits on your LLM account
-- ✅ Verify the base URL is correct
-- ✅ Test API connection manually
+-  Verify the API key is valid
+-  Check available credits on your LLM account
+-  Verify the base URL is correct
+-  Test API connection manually
 
 </details>
 
 <details>
 <summary><b>Bot doesn't save data</b></summary>
 
-- ✅ Verify write permissions in the directory
-- ✅ Check `.env` configuration
-- ✅ Ensure SQLite is properly installed
-- ✅ Review `database.py` for errors
+-  Verify write permissions in the directory
+-  Check `.env` configuration
+-  Ensure SQLite is properly installed
+-  Review `database.py` for errors
 
 </details>
 
@@ -396,7 +367,6 @@ personality = 'sarcastic, direct, ironic, sometimes chaotic'
 Cognitive-User-Simulation/
 │
 ├── .env.example              # Example environment variables
-├── .gitignore                # Git ignore rules
 │
 ├── discord_bot.py            # Main bot entry point
 ├── LLM_Client.py             # LLM provider integration
@@ -422,17 +392,9 @@ See [LICENSE](LICENSE) file for more details.
 ## 🙏 Support
 
 For issues or questions:
-- 📝 Check the logs in the database or `debug.txt`
-- 🐛 Open an issue in the repository
-- 📧 Contact the author through GitHub
-
----
-
-## 🔗 Links
-
-- [Discord Terms of Service](https://discord.com/terms)
-- [Discord Community Guidelines](https://discord.com/guidelines)
-- [Discord Developer Portal](https://discord.com/developers)
+- Check the logs in the database or `debug.txt`
+- Open an issue in the repository
+- Contact the author through GitHub
 
 ---
 
