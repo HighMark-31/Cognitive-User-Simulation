@@ -15,6 +15,8 @@
 
 [![Star the project](https://img.shields.io/badge/⭐_Star_the_Project-black?style=for-the-badge)](https://github.com/HighMark-31/Cognitive-User-Simulation/stargazers) ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=HighMark-31.Cognitive-User-Simulation)
 
+<img width="1536" height="1024" alt="bannerCognitiveUserSimulation" src="https://github.com/user-attachments/assets/ccaa1699-d507-427f-b989-c844a16d43f5" />
+
 </div>
 
 ---
