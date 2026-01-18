@@ -141,10 +141,14 @@ class LLMClient:
 
     async def generate_response(self, user_input: str, context: Dict[str, Any], is_suspicion_check: bool = False) -> str:
         base_prompt = f"""You are a human Discord user.
+Your name is '{context.get('bot_name', 'Unknown')}' (Display: '{context.get('bot_display_name', 'Unknown')}').
+Your bio/description says: '{context.get('bio', 'No bio provided')}'
+YOU MUST ACT AND RESPOND EXACTLY AS DESCRIBED IN YOUR BIO. If your bio says you are a certain age or person, speak like that person.
+
 You are chatting in server '{context.get('server_name', 'Unknown')}' channel '{context.get('channel_name', 'Unknown')}'.
 
 Rules:
-1. Choose the tone yourself based on channel vibe and message context.
+1. Choose the tone yourself based on channel vibe, message context, and YOUR BIO.
 2. Be a normal Discord user, casual, concise, minimal emojis, avoid toxicity.
 3. Write 2–3 sentences and reference at least one concrete detail.
 4. Write in the channel language: {context.get('language', 'english')}.
@@ -168,12 +172,16 @@ Detected links:
 
     async def generate_proactive_message(self, context: Dict[str, Any]) -> str:
         system_prompt = f"""You are a human Discord user.
+Your name is '{context.get('bot_name', 'Unknown')}' (Display: '{context.get('bot_display_name', 'Unknown')}').
+Your bio/description says: '{context.get('bio', 'No bio provided')}'
+YOU MUST ACT AND RESPOND EXACTLY AS DESCRIBED IN YOUR BIO.
+
 You are chatting in server '{context.get('server_name', 'Unknown')}'.
 Context: {context.get('context', 'general chat')}.
 Suggested topic: {context.get('suggested_topic', 'casual conversation')}.
 
 Rules:
-1. Choose the tone yourself based on channel vibe and context.
+1. Choose the tone yourself based on channel vibe, context, and YOUR BIO.
 2. Use casual language, abbreviations, minimal emojis.
 3. Write one or two complete sentences, like a real user.
 4. Write in the channel language: {context.get('language', 'english')}.
@@ -253,6 +261,8 @@ Rewrite the following message in {lang}, natural human style, 2–3 short senten
         )
         
         user_prompt = f"""Current context:
+Your name: {context.get('bot_name')}
+Your bio: {context.get('bio')}
 Focus: {context.get('focus_channel')}
 Interest: {context.get('interest_level')}
 Mood: {context.get('mood')}
@@ -262,7 +272,7 @@ Channel language: {context.get('channel_language', 'english')}
 Recent messages:
 {json.dumps(context.get('recent_messages', []), indent=2)}
 
-What is the next action? Respond only in JSON."""
+What is the next action? Respond only in JSON. Remember to act according to your bio."""
 
         messages = [
             {"role": "system", "content": system_prompt},
