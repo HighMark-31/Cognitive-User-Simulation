@@ -50,6 +50,7 @@ class DiscordAIBot(commands.Bot):
         self.last_action = 'none'
         self.mood = 'chill'
         self.personality = 'sarcastic, direct, ironic, sometimes chaotic'
+        self.bio = ''
         self.conversation_history = {}
         self.action_queue = asyncio.Queue()
         
@@ -210,7 +211,10 @@ class DiscordAIBot(commands.Bot):
         return {
             'personality': self.personality,
             'mood': self.mood,
-            'conversation_context': '\\n'.join(list(self.conversation_history.get(user_id_str, []))[-5:]),
+            'bio': self.bio,
+            'bot_name': self.user.name,
+            'bot_display_name': self.user.display_name,
+            'conversation_context': '\n'.join(list(self.conversation_history.get(user_id_str, []))[-5:]),
             'server_name': message.guild.name if message.guild else 'DM',
             'channel_name': message.channel.name if hasattr(message.channel, 'name') else 'DM',
             'language': language,
@@ -244,6 +248,14 @@ class DiscordAIBot(commands.Bot):
     
     async def on_ready(self):
         log_to_file("READY", f"Logged in as {self.user} ({self.user.id})")
+        
+        try:
+            app_info = await self.application_info()
+            self.bio = app_info.description or ""
+            log_to_file("READY", f"Fetched bio: {self.bio[:50]}...")
+        except Exception as e:
+            log_to_file("ERROR", f"Failed to fetch app info: {e}")
+
         print(f'{self.user} is online!')
         print(f'Connected to {len(self.guilds)} servers')
         if self.token_fingerprint:
