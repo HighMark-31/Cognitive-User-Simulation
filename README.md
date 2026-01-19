@@ -141,7 +141,7 @@ LLM_PROVIDER=glm
 # GLM (Zhipu AI) CONFIGURATION
 # ==========================================
 GLM_API_KEY=your_glm_api_key_here
-GLM_BASE_URL=https://open.bigmodel.cn/api/coding/paas/v4
+GLM_BASE_URL=https://z.ai/api/coding/paas/v4
 GLM_MODEL=glm-4.7
 
 # ==========================================
@@ -149,13 +149,13 @@ GLM_MODEL=glm-4.7
 # ==========================================
 OPENAI_API_KEY=your_openai_api_key_here
 OPENAI_BASE_URL=https://api.openai.com/v1
-OPENAI_MODEL=gpt-4o-mini
+OPENAI_MODEL=gpt-5
 
 # ==========================================
 # GOOGLE GEMINI CONFIGURATION
 # ==========================================
 GEMINI_API_KEY=your_gemini_api_key_here
-GEMINI_MODEL=gemini-1.5-flash
+GEMINI_MODEL=gemini-3.0-flash
 
 # ==========================================
 # OPTIONAL SETTINGS
@@ -170,7 +170,7 @@ PRIORITY_GUILD_ID=1320998163615846420
 
 | Provider | Get API Key | Documentation |
 |----------|-------------|---------------|
-| **GLM (Zhipu)** | [open.bigmodel.cn](https://z.ai/) | [Docs](https://z.ai/model-api) |
+| **GLM (Z.ai)** | [Z.ai](https://z.ai/) | [Docs](https://z.ai/model-api) |
 | **OpenAI** | [platform.openai.com](https://platform.openai.com/) | [Docs](https://platform.openai.com/docs) |
 | **Google Gemini** | [makersuite.google.com](https://makersuite.google.com/) | [Docs](https://ai.google.dev/docs) |
 
